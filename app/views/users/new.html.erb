@@ -1,0 +1,12 @@
+
+<h1>Sign Up</h1>
+
+<%= form_for @user do |f| %>
+  Full name   : <%= f.text_field :username %><br />
+  Phone Number: <%= f.text_field :phone_number %><br />
+  Address     : <%= f.text_area :address %><br />
+  Password    : <input type="password" name="user[password]" /><br />
+  * Must be at least 8 characters<br>
+  Email    		: <input name="user[email]" type="email" /><br />
+  <%= f.submit %>
+<% end %>

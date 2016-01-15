@@ -1,0 +1,12 @@
+<h1>Stayay</h1>
+	
+<%= @error if @error %>
+
+<h2>Login</h2>
+<%= form_for  do |f| %>
+  Email   : <%= f.text_field :email %><br />
+  Password    : <%= f.password :password %><br />
+  * Must be at least 8 characters<br>
+  <button users_path><%= f.submit %></button>
+<% end %>
+
